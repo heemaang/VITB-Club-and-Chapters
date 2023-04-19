@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs and Chapters</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body style="background-color: white;">
+
+
+<!-- header section starts  -->
+
+<header class="header"  style="background-color:indigo;">
+
+    <a href="#" class="logo"><span>e</span>vents on VITB</a>
+
+    <nav class="navbar">
+        <a  href="welcome2.php">Home </a>
+        <a href="#">gallery</a>
+        <a href="https://www.youtube.com/watch?v=C-KbCMvt86A" target="_blank">about</a>
+        <a  href="event.html">Events</a>
+        <a href="logout2.php">Logout</a>
+    </nav>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="push.min.js"></script>
+    <script src="serviceWorker.min.js"></script>
+    <script>
+    function start(){
+         Push.create("Events Notification", {
+         body: "xyz event has started",
+         icon: 'bg.png',
+         timeout: 4000,
+         onClick: function () {
+            window.focus();
+            this.close();
+        }
+    });
+}
+ 
+
+</script>
+<a href="javascript:void(0)" onclick="start()" class="onlo">
+    <img src="ev.jpg" width="50" height="50" />
+</a>
+ <h3>Click on the left img</h3>
+    
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3 style="color: black">its time to celebrate! the best <span> events on our Campus </span></h3>
+        <a href="#" class="btn">contact us</a>
+    </div>
+
+    <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/slide-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/slide-3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/slide-4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/slide-5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/slide-6.jpg" alt=""></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- service section starts  -->
+
+<section class="service" id="service">
+
+    <h1 class="heading" style="color: black"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>venue selection</h3>
+            <p>Auditorium.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>invitation mail/notification</h3>
+            <p>To let u know about the event.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-cog"></i>
+            <h3>Type of event</h3>
+            <p>which event is happening at the campus.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-instagram"></i>
+            <h3>insta profile handle</h3>
+            <p>will see many events pics in insta profile also.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-photo-video"></i>
+            <h3>photos and videos</h3>
+            <p>we capture the photos and videos and upload in the website.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-birthday-cake"></i>
+            <h3>custom food</h3>
+            <p>which food will be there for you.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- service section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"><span>about</span> us </h1>
+
+<div class="row">
+
+    <div class="image">
+        <img src="images/about-img.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3 style="color: rgb(0,0,0);">VIT Bhopal events celebrations</h3>
+        <h2 style="color: rgb(0,0,0);">Past Events</h2>
+<h4 style="color: rgb(0,0,0);">
+29 APR 2022
+RABVIT 2.0
+Time Start 9:00 am
+</h4>
+ <h4 style="color: rgb(0,0,0);">   
+6 MAY 2022
+STAAAR – 2022
+Time Start 8:00 am
+at VIT Bhopal University
+</h4>
+<h4 style="color: rgb(0,0,0);">
+10 JUN 2022
+ICSDP-2022
+Time Start 8:00 am
+at VIT Bhopal University
+</h4>
+<h4 style="color: rgb(0,0,0);">
+16 JUL 2022
+FAREWELL – 2019 B.TECH BATCH
+Time Start 4:00 pm
+at VIT Bhopal University
+</h4>
+        <a href="#" class="btn">contact us</a>
+    </div>
+
+</div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading" style="color: black">our <span>gallery</span></h1>
+
+    <div class="box-container">
+ <div class="box">
+            <img src="images/c1.jpg" alt="">
+            <h3 class="title">Android Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c2.png" alt="">
+            <h3 class="title">Data Science Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c3.jpg" alt="">
+            <h3 class="title">Drama Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c4.png" alt="">
+            <h3 class="title">Google Developer Students Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c5.png" alt="">
+            <h3 class="title">AI Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c6.jpg" alt="">
+            <h3 class="title">Music Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c7.png" alt="">
+            <h3 class="title">Anchoring Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c8.png" alt="">
+            <h3 class="title">Dance Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c9.jpg" alt="">
+            <h3 class="title">Cyber Warriors Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <img src="images/c10.jpg" alt="">
+            <h3 class="title">Photography Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c11.jpeg" alt="">
+            <h3 class="title">Energy and environment protection club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c12.png" alt="">
+            <h3 class="title">Insights Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c13.png" alt="">
+            <h3 class="title">Coding Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c14.jpg" alt="">
+            <h3 class="title">Mun Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/c15.jpeg" alt="">
+            <h3 class="title">Anterix Club</h3>
+            <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+
+<!-- review section starts  -->
+
+<section class="reivew" id="review"> 
+    
+    <h1 class="heading" style="color: black">Students <span>review</span></h1>
+
+    <div class="review-slider swiper-container">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <span>happy Students</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor dicta cum. Eos beatae eligendi, magni numquam nemo sed ut corrupti, ipsam iure nisi unde et assumenda perspiciatis voluptatibus nihil.</p>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <span>happy Students</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor dicta cum. Eos beatae eligendi, magni numquam nemo sed ut corrupti, ipsam iure nisi unde et assumenda perspiciatis voluptatibus nihil.</p>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <span>happy Students</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor dicta cum. Eos beatae eligendi, magni numquam nemo sed ut corrupti, ipsam iure nisi unde et assumenda perspiciatis voluptatibus nihil.</p>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-right"></i>
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="user-info">
+                        <h3>john deo</h3>
+                        <span>happy Students</span>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolor dicta cum. Eos beatae eligendi, magni numquam nemo sed ut corrupti, ipsam iure nisi unde et assumenda perspiciatis voluptatibus nihil.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading" style="color: black"> <span>contact</span> us </h1>
+
+    <form action="">
+        <div class="inputBox">
+            <input type="text" placeholder="name">
+            <input type="email" placeholder="email">
+        </div>
+        <div class="inputBox">
+            <input type="number" placeholder="number">
+            <input type="text" placeholder="subject">
+        </div>
+        <textarea name="" placeholder="your message" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer" style="background-color:indigo;">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>branches</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Vellore </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Chennai </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Bhopal </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Andhra Pradesh </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> gallery </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +91 9387625252 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +91 7845367289 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> dsw@vitbhopal.ac.in </a>
+            <a href="#"> <i class="fas fa-envelope"></i> adsw@vitbhopal.ac.in </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Bhopal, india - 400104 </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span>VITB</span> | all rights reserved </div>
+    <center><img src = "bg.png" style="width:150px;height:75px;"></center> 
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- theme toggler  -->
+
+<div class="theme-toggler">
+
+    <div class="toggle-btn">
+        <i class="fas fa-cog"></i>
+    </div>
+
+    <h3>choose color</h3>
+
+    <div class="buttons">
+        <div class="theme-btn" style="background: #3867d6;"></div>
+        <div class="theme-btn" style="background: #f7b731;"></div>
+        <div class="theme-btn" style="background: #ff0033;"></div>
+        <div class="theme-btn" style="background: #20bf6b;"></div>
+        <div class="theme-btn" style="background: #fa8231;"></div>
+        <div class="theme-btn" style="background: #FC427B;"></div>
+    </div>
+
+</div>
+
+
+
+
+
+
+</script>
+<a href="javascript:void(0)" onclick="start()">Start</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

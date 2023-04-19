@@ -1,0 +1,19 @@
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="push.min.js"></script>
+<script src="serviceWorker.min.js"></script>
+<script>
+function start(){
+	Push.create("Events Notification", {
+		body: "xyz event has started",
+		icon: 'bg.png',
+		timeout: 4000,
+		onClick: function () {
+			window.focus();
+			this.close();
+		}
+	});
+}
+
+
+</script>
+<a href="javascript:void(0)" onclick="start()">Start</a>
